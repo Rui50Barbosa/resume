@@ -18,7 +18,7 @@ nav ul {
 }
 
 nav li {
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 nav a {
@@ -91,10 +91,10 @@ main {
 .formation {
     position: relative;
     font-family: 'Quicksand', sans-serif;
-    left: -10%; /* Ajuste conforme necessário */
-    top: -20px; /* Use uma unidade de medida absoluta, como pixels */
-    margin-top: 20px; /* Ajuste conforme necessário para manter o alinhamento */
-    margin-left: 35%; /* Ajuste conforme necessário para manter o alinhamento */
+    left: -10%;
+    top: -20px;
+    margin-top: 20px;
+    margin-left: 35%;
 }
 
 .retanguloformation {
@@ -151,7 +151,6 @@ main {
     margin-left: 250px;
     margin-top: -160px;
     margin-bottom: 10px;
-    max-height: 300px;
     overflow: auto;
     text-overflow: ellipsis;
 }
@@ -211,21 +210,35 @@ main {
 
 .retanguloqualidades {
     position: relative;
-    width: 80%; /* Largura menor */
-    min-width: 200px; /* Largura mínima menor */
-    height: 80vh; /* Altura maior */
-    max-width: none; /* Remova a largura máxima */
-    max-height: none; /* Remova a altura máxima */
+    width: 80%;
+    min-width: 200px;
+    height: 80vh;
+    max-width: none;
+    max-height: none;
     overflow-y: auto;
     margin-left: -15%;
+    box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+}
+
+.retanguloqualidadescontainer {
+    position: relative;
+    width: 70%;
+    min-width: 300px;
+    height: 40vh;
+    max-width: 700px;
+    background-color: white;
+    top: 70px;
+    left: 25%;
+    max-height: 300px;
+    overflow: hidden;
     box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
 }
 
 .retanguloqualidades ul {
     font-family: 'Quicksand', sans-serif;
     font-size: larger;
-    padding: 0; /* Remover o preenchimento padrão da lista */
-    columns: 1; /* Dividir em duas colunas */
+    padding: 0;
+    columns: 1;
     column-gap: 5px;
     padding-right: 10px;
     padding-top: 40px;

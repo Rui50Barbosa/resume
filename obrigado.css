@@ -1,0 +1,38 @@
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background:#37b6ff;
+    flex-direction: column;
+}
+
+.text{
+    font-size: 45px;
+    font-family: 'Quicksand';
+    margin-bottom: 30px;
+}
+
+.paragrafo{
+font-family: 'Quicksand';
+ margin-bottom: 50px;
+}
+
+.btn{
+    font-family: 'Quicksand';
+    padding: 15px 55px;
+    background: #0c09d3 ;
+    text-decoration: none;
+    color:white;
+    border-radius: 30px;
+    border-color: #0c09d3;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn:hover {
+    border-color: #0c09d3;
+    background-color: rgb(255, 216, 90);
+    color: black;
+    
+}
