@@ -12,6 +12,26 @@ header {
     z-index: 999;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: rgb(189,83,93);
+}
+
 .header-title {
     flex-grow: 1;
     text-align: left;
@@ -131,7 +151,7 @@ main {
     margin-left: 250px;
     margin-top: -160px;
     margin-bottom: 10px;
-    max-height: 300px; /* Ajuste a altura máxima conforme necessário */
+    max-height: 300px;
     overflow: auto;
     text-overflow: ellipsis;
 }
@@ -178,4 +198,41 @@ main {
     font-family: 'Quicksand', sans-serif;
     left: 25%;
     top: 20px;
+}
+
+.qualidades {
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    left: -15%;
+    top: 50px;
+    margin-top: 20px;
+    margin-left: 35%;
+}
+
+.retanguloqualidades {
+    position: relative;
+    width: 80%; /* Largura menor */
+    min-width: 200px; /* Largura mínima menor */
+    height: 80vh; /* Altura maior */
+    max-width: none; /* Remova a largura máxima */
+    max-height: none; /* Remova a altura máxima */
+    overflow-y: auto;
+    margin-left: -15%;
+    box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+}
+
+.retanguloqualidades ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    padding: 0; /* Remover o preenchimento padrão da lista */
+    columns: 1; /* Dividir em duas colunas */
+    column-gap: 5px;
+    padding-right: 10px;
+    padding-top: 40px;
+}
+
+.retanguloqualidades ul li {
+    margin-bottom: 25px; 
+    margin-left: 50px;
+    margin-top: 15px;  
 }
