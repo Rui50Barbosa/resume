@@ -133,21 +133,21 @@ form textarea{
 }
 
 form button{
-font-family: 'Quicksand',sans-serif;
-padding: 15px;
-cursor: pointer;
-font-size: 16px;
-border: 2px solid #0c09d3;
-background-color: #0c09d3;
-color: white;
-transition: all 1s;
-margin-bottom: 100px;
-border-radius: 16px;
+    font-family: 'Quicksand',sans-serif;
+    padding: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid #0c09d3;
+    background-color: #0c09d3;
+    color: white;
+    transition: all 1s;
+    margin-bottom: 100px;
+    border-radius: 16px;
 }
 
 form button:hover{
-    background: white;
-    color: rgb(255, 216, 90);
+    background: rgb(163, 221, 255);
+    color: rgb(0, 0, 0);
 }
 
 .footer {

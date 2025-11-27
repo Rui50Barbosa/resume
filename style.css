@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header {
     background-color: white;
     color: #ffffff;
@@ -51,7 +57,7 @@ nav a:hover {
     font-weight: lighter;
 }
 
-.barranavegacao {
+.barranavegacao{
     display: none ;
     cursor: pointer;
 }
@@ -74,19 +80,20 @@ nav a:hover {
     text-align: center;
 }
 
-main {
-    margin: 0;
-    padding: 0;
+main{
     background-color: #37b6ff;
+    height: auto;
+    overflow-x: hidden;
 }
 
-.main-title {
+.main-title{
     position: relative;
     font-family: 'Quicksand',sans-serif;
     margin-left: 40%;
     padding-top: 120px;
     font-size: 50px;
 }
+
 
 .formation {
     position: relative;
@@ -111,6 +118,7 @@ main {
     box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
 }
 
+
 .info {
     font-family: 'Quicksand', sans-serif;
     margin-left: 50px;
@@ -120,7 +128,7 @@ main {
 }
 
 .info h1 {
-    color: #002b64;
+    color: #000770;
     margin-bottom: 5px;
 }
 
@@ -139,7 +147,7 @@ main {
     margin-bottom: 15px;
 }
 
-.info .bachelor {
+.info .bachelor{
     margin-bottom: 15px;
 }
 
@@ -151,31 +159,24 @@ main {
     margin-left: 250px;
     margin-top: -160px;
     margin-bottom: 10px;
+    max-height: 300px;
     overflow: auto;
     text-overflow: ellipsis;
 }
 
-.small-aboutme h3 {
+
+.small-aboutme h3{
     font-weight: lighter;
     padding-right: 30px;
+    
+   
 }
 
-.skills-list {
-    list-style: none;
-    columns: 3;
-    column-gap: 3px;
-    padding: 0;
-    margin: 0;
-}
-
-.qualidades {
+.skills {
     position: relative;
     font-family: 'Quicksand', sans-serif;
-    left: -10%;
-    top: 50px;
-    margin-top: 20px;
-    margin-left: 35%;
-    
+    left: 25%;
+    top: 20px;
 }
 
 .retanguloskills {
@@ -189,38 +190,44 @@ main {
     left: 25%;
     max-height: 300px;
     overflow: hidden;
-    box-shadow: -5px 5px 5px rgba(14, 106, 226, 0.5);
-}
-
-.skills {
-    position: relative;
-    font-family: 'Quicksand', sans-serif;
-    left: 25%;
-    top: 20px;
-}
-
-.qualidades {
-    position: relative;
-    font-family: 'Quicksand', sans-serif;
-    left: -15%;
-    top: 50px;
-    margin-top: 20px;
-    margin-left: 35%;
-}
-
-.retanguloqualidades {
-    position: relative;
-    width: 80%;
-    min-width: 200px;
-    height: 80vh;
-    max-width: none;
-    max-height: none;
-    overflow-y: auto;
-    margin-left: -15%;
     box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
 }
 
-.retanguloqualidadescontainer {
+.retanguloskills ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    list-style:disc;
+    padding: 0;
+    columns: 2;
+    column-gap: 5px;
+    padding-right: 100px;
+    padding-left: -1000px;
+    padding-top: 30px;
+
+}
+
+.retanguloskills ul li {
+    margin-bottom: 5px; 
+    margin-left: 100px;
+    margin-top: 5px;
+   
+}
+.retanguloskills ul img {
+    margin-right: 20px; 
+    vertical-align:middle;
+}
+
+.qualidades{
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    left: -10%;
+    top: 50px;
+    margin-top: 20px;
+    margin-left: 35%;
+    
+}
+
+.retanguloqualidades {
     position: relative;
     width: 70%;
     min-width: 300px;
@@ -232,22 +239,26 @@ main {
     max-height: 300px;
     overflow: hidden;
     box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    margin-bottom: 150px;
+
 }
 
 .retanguloqualidades ul {
     font-family: 'Quicksand', sans-serif;
     font-size: larger;
     padding: 0;
-    columns: 1;
+    columns: 2;
     column-gap: 5px;
     padding-right: 10px;
-    padding-top: 40px;
+    padding-top: 50px;
+
 }
 
 .retanguloqualidades ul li {
-    margin-bottom: 25px; 
+    margin-bottom: 20px; 
     margin-left: 50px;
-    margin-top: 15px;  
+    margin-top: 10px;
+   
 }
 
 .footer {
