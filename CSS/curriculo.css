@@ -157,7 +157,7 @@ main{
     line-height: 1.5;
     font-size: small;
     margin-left: 250px;
-    margin-top: -160px;
+    margin-top: -145px;
     margin-bottom: 10px;
     max-height: 300px;
     overflow: auto;
@@ -208,7 +208,7 @@ main{
 }
 
 .retanguloskills ul li img {
-    width: 70px;
+    width: 55px;
     height: auto;
     margin-right: 10px;
 }
@@ -218,7 +218,7 @@ main{
     font-family: 'Quicksand', sans-serif;
     left: -10%;
     top: 50px;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-left: 35%;
     
 }
