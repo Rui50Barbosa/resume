@@ -249,3 +249,352 @@ main {
     margin-left: 50px;
     margin-top: 15px;  
 }
+
+@media (max-width: 768px)
+{
+    .barranavegacao{
+        display: block;
+    }
+
+ 
+
+    .barranavegacao.active .bar:nth-child(2)
+    {
+        opacity:0 ;
+    }
+
+    
+    .barranavegacao.active .bar:nth-child(1)
+    {
+    transform: translateY(8px) rotate(45deg) ;
+    }
+
+      
+    .barranavegacao.active .bar:nth-child(3)
+    {
+    transform: translateY(-8px) rotate(-45deg) ;
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        gap: 0;
+        flex-direction: column;
+        background-color: #dcccc4;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 1000;
+    }
+
+
+  .nav-menu li {
+    font-size: 25px;
+    margin-top: 100px;
+    margin-bottom: -50px;
+  }
+
+    .nav-menu.active{
+        left: 0;
+
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    
+.main-title{
+    position: relative;
+    font-family: 'Quicksand',sans-serif;
+    margin-left: 35%;
+    padding-top: 120px;
+    font-size: 50px;
+}
+    
+    .retanguloformation {
+        position: relative;
+        width: 50%;
+        min-width: 200px;
+        height: 51vh;
+        max-width: none;
+        max-height: none;
+        overflow: hidden;
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+
+    .small-aboutme {
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 1.5;
+        font-size: small;
+        margin-top: 10px;
+        max-height: 300px;
+        overflow: auto;
+        text-overflow: ellipsis;
+        margin-left: 50px;
+    }
+
+    .retanguloskills {
+        position: relative;
+        width: 50%;
+        min-width: 200px;
+        height: 30vh;
+        max-width: none;
+        max-height: none;
+        overflow: hidden;
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+
+
+.retanguloskills ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    list-style:disc;
+    padding: 0;
+    columns: 2;
+    column-gap: 5px;
+    padding-right: 30px;
+    padding-left: -1000px;
+    padding-top: 30px;
+
+}
+
+.retanguloskills ul li {
+    margin-bottom: 5px; 
+    margin-left: 70px;
+    margin-top: 5px;
+   
+}
+
+.skills-list {
+    position: relative;
+    width: 50%;
+    min-width: 200px;
+    height: 40vh;
+    max-width: none;
+    max-height: none;
+    overflow-y: auto;
+    box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+}
+
+.skills-list ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    padding: 0;
+    columns: 1;
+    column-gap: 5px;
+    padding-right: 10px;
+    padding-top: 30px;
+
+}
+
+.skills-list ul li {
+    margin-bottom: 15px; 
+    margin-left: 50px;
+    margin-top: 1px;
+   
+}
+
+}
+
+@media only screen and (max-width: 500px){
+    
+    
+ .main-title {
+        position: relative;
+        font-family: 'Quicksand', sans-serif;
+        text-align: center;
+        font-size: 50px;
+        margin: 20px auto;
+    }
+
+    .retanguloformation {
+        position: relative;
+        width: 70%;
+        min-width: 200px;
+        height: 60vh;
+        max-width: none;
+        max-height: none;
+        overflow: hidden;
+        margin-left: -5%;
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+
+    .small-aboutme {
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 1.5;
+        font-size: small;
+        margin-top: 10px;
+        max-height: 300px;
+        overflow: auto;
+        text-overflow: ellipsis;
+        margin-left: 50px;
+    }
+
+    .retanguloskills {
+        position: relative;
+        width: 70%;
+        min-width: 200px;
+        height: 60vh;
+        max-width: none;
+        max-height: none;
+        overflow-y: auto;
+        margin-left: -5%;
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+
+
+.retanguloskills ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    list-style:disc;
+    padding: 0;
+    columns: 1;
+    column-gap: 5px;
+    padding-right: 30px;
+    padding-left: -1000px;
+    padding-top: 30px;
+
+}
+
+.retanguloskills ul li {
+    margin-bottom: 5px; 
+    margin-left: 70px;
+    margin-top: 5px;
+   
+}
+
+
+.retanguloqualidades {
+    position: relative;
+    width: 70%;
+    min-width: 200px;
+    height: 50vh;
+    max-width: none;
+    max-height: none;
+    overflow-y: auto;
+    margin-left: -5%;
+    box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+}
+
+.retanguloqualidades ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    padding: 0;
+    columns: 1;
+    column-gap: 5px;
+    padding-right: 10px;
+    padding-top: 40px;
+
+}
+
+.retanguloqualidades ul li {
+    margin-bottom: 20px; 
+    margin-left: 50px;
+    margin-top: 1px;
+   
+}
+
+}
+
+@media only screen and (max-width: 380px){
+
+    .retanguloformation {
+        position: relative;
+        width: 80%;
+        min-width: 200px;
+        height: 80vh;
+        max-width: none;
+        max-height: none;
+        margin-left: -15%;
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+    
+    .small-aboutme {
+        text-align: left;
+        font-family: 'Quicksand', sans-serif;
+        line-height: 1.5;
+        font-size: small;
+        margin-top: 10px;
+        overflow: auto;
+        margin-left: 50px;
+    }
+
+    .skills {
+        position: relative;
+        font-family: 'Quicksand', sans-serif;
+        left: 20%;
+        top: 20px;
+    }
+
+    .retanguloskills {
+        position: relative;
+        width: 80%;
+        min-width: 200px;
+        height: 80vh;
+        max-width: none;
+        max-height: none;
+        overflow-y: auto;
+        margin-left: -15%;
+        box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+    }
+
+    
+.retanguloskills ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    list-style:disc;
+    padding: 0;
+    columns: 1;
+    column-gap: 5px;
+    padding-right: 30px;
+    padding-left: -1000px;
+    padding-top: 40px;
+
+}
+
+.qualidades{
+    position: relative;
+    font-family: 'Quicksand', sans-serif;
+    left: -15%;
+    top: 50px;
+    margin-top: 20px;
+    margin-left: 35%;
+    
+}
+
+.retanguloqualidades {
+    position: relative;
+    width: 80%;
+    min-width: 200px;
+    height: 80vh; 
+    max-width: none; 
+    max-height: none; 
+    overflow-y: auto;
+    margin-left: -15%;
+    box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
+}
+
+.retanguloqualidades ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: larger;
+    padding: 0; 
+    columns: 1; 
+    column-gap: 5px;
+    padding-right: 10px;
+    padding-top: 40px;
+
+}
+
+.retanguloqualidades ul li {
+    margin-bottom: 25px; 
+    margin-left: 50px;
+    margin-top: 15px;
+   
+}
+
+
+}
