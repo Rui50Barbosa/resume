@@ -122,7 +122,7 @@ main{
 .info {
     font-family: 'Quicksand', sans-serif;
     margin-left: 50px;
-    margin-top: 20px;
+    margin-top: 70px;
     padding-top: 25px;
     text-align: left;
 }
@@ -157,7 +157,7 @@ main{
     line-height: 1.5;
     font-size: small;
     margin-left: 250px;
-    margin-top: -160px;
+    margin-top: -200px;
     margin-bottom: 10px;
     max-height: 300px;
     overflow: auto;
