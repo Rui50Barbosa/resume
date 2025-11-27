@@ -120,6 +120,8 @@ nav a:hover {
 .circle img {
     max-width: 160%;
     max-height: 160%;
+    object-fit: cover;
+    transform: scale(1.2);
 }
 
 .name{
@@ -153,7 +155,16 @@ nav a:hover {
     box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
 }
 
+.rectangle-footer a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0 10px;
+}
+
 .rectangle-footer img{
+    display: block;
     max-width: 10%;
     max-width: 10%;
     padding: 4px;
@@ -198,7 +209,7 @@ nav a:hover {
 .text-info h1 {
     font-size: 100px;
     font-weight: bolder;
-    margin-left: -100px;
+    margin-left: -85px;
 }
 
 .text-info h2 {
