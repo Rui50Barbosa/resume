@@ -208,9 +208,10 @@ main{
 }
 
 .retanguloskills ul li img {
-    width: 55px;
+    width: 48px;
     height: auto;
     margin-right: 10px;
+    margin-left: 20px;
 }
 
 .qualidades{
