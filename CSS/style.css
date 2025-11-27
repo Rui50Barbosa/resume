@@ -57,7 +57,7 @@ nav a:hover {
     font-weight: lighter;
 }
 
-.hamburguer{
+.barranavegacao{
     display: none ;
     cursor: pointer;
 }
