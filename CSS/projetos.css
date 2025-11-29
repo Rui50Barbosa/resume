@@ -62,11 +62,7 @@ nav a:hover {
 main {
     padding-top: 120px;
     font-family: 'Quicksand', sans-serif;
-}
-
-main{
     background-color: #37b6ff;
-    height: auto;
     overflow-x: hidden;
 }
 
@@ -75,7 +71,6 @@ main{
     padding: 60px 20px;
     background: #37b6ff;
     text-align: center;
-    color: black;
 }
 
 .background-container h1 {
@@ -90,54 +85,66 @@ main{
     font-weight: 400;
 }
 
+/* RECTANGLE */
+
 .retangulo {
     position: relative;
     width: 90%;
     max-width: 900px;
     margin: 40px auto;
     background: white;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    border-radius: 8px;
-    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    border-radius: 12px;
+    padding: 40px;
     overflow: hidden;
+    text-align: center;
 }
 
 .slider {
     position: relative;
     width: 100%;
-    min-height: 400px;
+    min-height: 380px;
 }
 
 .slide {
     display: none;
-    position: absolute;
     width: 100%;
     top: 0;
     left: 0;
     gap: 20px;
     align-items: center;
+    justify-content: center;
 }
 
 .slide.active {
     display: flex;
 }
 
-.slide-left {
-    width: 60%;
-}
-
+.slide-left,
 .slide-right {
-    width: 40%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
+.slide-left {
+    width: 50%;
+    text-align: left;
+}
+
+.slide-right {
+    width: 50%;
+    align-items: center;
+}
+
 .slide-right img {
-    width: 100%;
+    width: 95%;
     height: auto;
     border-radius: 8px;
     object-fit: contain;
 }
+
+/* ARROWS */
 
 .arrow {
     position: absolute;
@@ -149,7 +156,7 @@ main{
     padding: 14px 18px;
     border-radius: 50%;
     cursor: pointer;
-    font-size: 24px;
+    font-size: 22px;
     z-index: 10;
     opacity: 0;
     pointer-events: none;
@@ -161,49 +168,50 @@ main{
     pointer-events: auto;
 }
 
-.arrow:hover {
-    background: #003c9e;
-}
-
 .left-arrow {
     left: -5px;
 }
-
 .right-arrow {
     right: -5px;
 }
 
-.footer {
-    background: white;
-    padding: 20px;
-    font-family: 'Quicksand', sans-serif;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    color: #666;
+.arrow:hover {
+    background: #003c9e;
 }
 
-.footer-info {
+/* DOTS */
+
+.dots-container {
+    margin-top: 20px;
     display: flex;
-    align-items: center;
-    gap: 8px;
+    justify-content: center;
+    gap: 10px;
 }
+
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.dot.active {
+    background: #003c9e;
+}
+
+/* MOBILE */
 
 @media (max-width: 900px) {
     .slide {
         flex-direction: column;
-        text-align: center;
     }
 
     .slide-left,
     .slide-right {
         width: 100%;
-    }
-
-    .arrow {
-        padding: 10px 12px;
-        font-size: 20px;
+        text-align: center;
     }
 }
 
@@ -227,9 +235,5 @@ main{
 
     nav ul.active {
         display: flex;
-    }
-
-    .slide-right img {
-        width: 100%;
     }
 }

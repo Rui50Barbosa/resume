@@ -1,5 +1,4 @@
-//NAVIGATION MENU TOGGLE
-
+// NAVIGATION MENU TOGGLE
 const navMenu = document.querySelector(".nav-menu");
 const barranavegacao = document.querySelector(".barranavegacao");
 
@@ -15,26 +14,44 @@ document.querySelectorAll(".nav-link").forEach(n =>
     })
 );
 
-
 // PROJECT SLIDER
-
 const slides = document.querySelectorAll(".slide");
 const leftArrow = document.querySelector(".left-arrow");
 const rightArrow = document.querySelector(".right-arrow");
+const dotsContainer = document.querySelector(".dots-container");
 
 let index = 0;
 
-function showSlide(i) {
+// Create dots
+slides.forEach((_, i) => {
+    const dot = document.createElement("div");
+    dot.classList.add("dot");
+    if (i === 0) dot.classList.add("active");
+
+    dot.addEventListener("click", () => {
+        index = i;
+        updateSlider();
+    });
+
+    dotsContainer.appendChild(dot);
+});
+
+const dots = document.querySelectorAll(".dot");
+
+function updateSlider() {
     slides.forEach(s => s.classList.remove("active"));
-    slides[i].classList.add("active");
+    slides[index].classList.add("active");
+
+    dots.forEach(d => d.classList.remove("active"));
+    dots[index].classList.add("active");
 }
 
 rightArrow.addEventListener("click", () => {
     index = (index + 1) % slides.length;
-    showSlide(index);
+    updateSlider();
 });
 
 leftArrow.addEventListener("click", () => {
     index = (index - 1 + slides.length) % slides.length;
-    showSlide(index);
+    updateSlider();
 });
