@@ -64,7 +64,12 @@ main {
     font-family: 'Quicksand', sans-serif;
 }
 
-/* FULL BLUE BACKGROUND */
+main{
+    background-color: #37b6ff;
+    height: auto;
+    overflow-x: hidden;
+}
+
 .background-container {
     width: 100%;
     padding: 60px 20px;
@@ -85,7 +90,6 @@ main {
     font-weight: 400;
 }
 
-/* WHITE PROJECT CARD */
 .retangulo {
     position: relative;
     width: 90%;
@@ -98,14 +102,18 @@ main {
     overflow: hidden;
 }
 
-/* SLIDER */
 .slider {
+    position: relative;
     width: 100%;
+    min-height: 400px;
 }
 
 .slide {
     display: none;
+    position: absolute;
     width: 100%;
+    top: 0;
+    left: 0;
     gap: 20px;
     align-items: center;
 }
@@ -114,12 +122,10 @@ main {
     display: flex;
 }
 
-/* LEFT SIDE TEXT */
 .slide-left {
     width: 60%;
 }
 
-/* RIGHT SIDE IMAGE */
 .slide-right {
     width: 40%;
     display: flex;
@@ -133,7 +139,6 @@ main {
     object-fit: contain;
 }
 
-/* ARROWS ONLY SHOW ON HOVER */
 .arrow {
     position: absolute;
     top: 50%;
@@ -168,7 +173,6 @@ main {
     right: -5px;
 }
 
-/* FOOTER */
 .footer {
     background: white;
     padding: 20px;
@@ -186,7 +190,6 @@ main {
     gap: 8px;
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
     .slide {
         flex-direction: column;
