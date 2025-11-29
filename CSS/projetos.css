@@ -64,6 +64,7 @@ main {
     font-family: 'Quicksand', sans-serif;
 }
 
+/* FULL BLUE BACKGROUND */
 .background-container {
     width: 100%;
     padding: 60px 20px;
@@ -84,6 +85,7 @@ main {
     font-weight: 400;
 }
 
+/* WHITE PROJECT CARD */
 .retangulo {
     position: relative;
     width: 90%;
@@ -92,35 +94,46 @@ main {
     background: white;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     border-radius: 8px;
-    padding: 20px;
+    padding: 30px;
     overflow: hidden;
 }
 
+/* SLIDER */
 .slider {
-    display: flex;
-    transition: transform 0.4s ease;
     width: 100%;
 }
 
 .slide {
-    min-width: 100%;
-    padding: 20px;
     display: none;
-    flex-direction: column;
-    text-align: left;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
 }
 
 .slide.active {
-    display: block;
+    display: flex;
 }
 
-.slide img {
+/* LEFT SIDE TEXT */
+.slide-left {
+    width: 60%;
+}
+
+/* RIGHT SIDE IMAGE */
+.slide-right {
     width: 40%;
-    float: right;
-    margin-top: 10px;
-    border-radius: 8px;
+    display: flex;
+    justify-content: center;
 }
 
+.slide-right img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: contain;
+}
+
+/* ARROWS ONLY SHOW ON HOVER */
 .arrow {
     position: absolute;
     top: 50%;
@@ -128,12 +141,19 @@ main {
     background: #002169;
     color: white;
     border: none;
-    padding: 12px 16px;
+    padding: 14px 18px;
     border-radius: 50%;
     cursor: pointer;
     font-size: 24px;
     z-index: 10;
-    transition: 0.25s;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.retangulo:hover .arrow {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 .arrow:hover {
@@ -141,46 +161,14 @@ main {
 }
 
 .left-arrow {
-    left: 10px;
+    left: -5px;
 }
 
 .right-arrow {
-    right: 10px;
+    right: -5px;
 }
 
-.mini-retangulo {
-    width: 6px;
-    background: #002169;
-    border-radius: 4px;
-}
-
-.titleplatformer h1 {
-    font-size: 24px;
-    color: #002169;
-}
-
-.titleplatformer h3 {
-    font-size: 16px;
-    font-weight: 600;
-    margin-top: 6px;
-}
-
-.platformer-info {
-    flex: 1;
-}
-
-.platformer-info h3 {
-    font-weight: 400;
-    line-height: 1.4;
-}
-
-.retangulo img {
-    width: 40%;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
-}
-
+/* FOOTER */
 .footer {
     background: white;
     padding: 20px;
@@ -198,20 +186,21 @@ main {
     gap: 8px;
 }
 
+/* RESPONSIVE */
 @media (max-width: 900px) {
-    .retangulo {
+    .slide {
         flex-direction: column;
-        align-items: center;
         text-align: center;
     }
 
-    .retangulo img {
+    .slide-left,
+    .slide-right {
         width: 100%;
     }
 
-    .titleplatformer,
-    .platformer-info {
-        text-align: left;
+    .arrow {
+        padding: 10px 12px;
+        font-size: 20px;
     }
 }
 
@@ -237,14 +226,7 @@ main {
         display: flex;
     }
 
-    .slide img {
+    .slide-right img {
         width: 100%;
-        float: none;
-        margin: 15px 0 0 0;
-    }
-
-    .arrow {
-        padding: 8px 10px;
-        font-size: 20px;
     }
 }

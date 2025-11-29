@@ -15,7 +15,8 @@ document.querySelectorAll(".nav-link").forEach(n =>
     })
 );
 
-//PROJECT SLIDER
+
+// PROJECT SLIDER
 
 const slides = document.querySelectorAll(".slide");
 const leftArrow = document.querySelector(".left-arrow");
