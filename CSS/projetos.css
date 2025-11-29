@@ -107,13 +107,11 @@ main {
 }
 
 .slide {
-    display: none;
-    width: 100%;
+    position: absolute;
     top: 0;
     left: 0;
-    gap: 20px;
-    align-items: center;
-    justify-content: center;
+    width: 100%;
+    display: none;
 }
 
 .slide.active {
@@ -199,6 +197,27 @@ main {
 
 .dot.active {
     background: #003c9e;
+}
+
+.footer {
+    background-color: #002169;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 60px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.footer-info {
+    margin-top: 10px;
+}
+
+.footer-info h3 {
+    margin-bottom: 5px;
+}
+
+.footer p {
+    margin: 5px 0;
 }
 
 /* MOBILE */
