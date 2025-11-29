@@ -118,7 +118,6 @@ main{
     box-shadow: -5px 5px 5px rgba(132, 127, 127, 0.5);
 }
 
-
 .info {
     font-family: 'Quicksand', sans-serif;
     margin-left: 50px;
@@ -292,23 +291,20 @@ main{
         display: block;
     }
 
- 
-
     .barranavegacao.active .bar:nth-child(2)
     {
         opacity:0 ;
     }
-
     
     .barranavegacao.active .bar:nth-child(1)
     {
-    transform: translateY(8px) rotate(45deg) ;
+        transform: translateY(8px) rotate(45deg) ;
     }
 
       
     .barranavegacao.active .bar:nth-child(3)
     {
-    transform: translateY(-8px) rotate(-45deg) ;
+        transform: translateY(-8px) rotate(-45deg) ;
     }
 
     .nav-menu{
@@ -325,12 +321,11 @@ main{
         z-index: 1000;
     }
 
-
-  .nav-menu li {
-    font-size: 25px;
-    margin-top: 100px;
-    margin-bottom: -50px;
-  }
+    .nav-menu li {
+        font-size: 25px;
+        margin-top: 100px;
+        margin-bottom: -50px;
+    }
 
     .nav-menu.active{
         left: 0;
