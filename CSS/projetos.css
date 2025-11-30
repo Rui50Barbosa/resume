@@ -112,9 +112,9 @@ main {
     margin: 0 auto;
     background: white;
     border-radius: 20px;
-    overflow: hidden;
+    overflow: hidden; /* THIS IS CRITICAL */
     padding: 20px;
-    display: block;
+    position: relative; /* needed for arrows */
 }
 
 .slider {
@@ -124,7 +124,7 @@ main {
 
 .slide {
     height: 360px;
-    display: grid;
+    display: none !important;
     grid-template-columns: 1fr 1fr;
     align-items: flex-start;
     gap: 20px;
@@ -132,6 +132,7 @@ main {
 
 .slide.active {
     align-items: flex-start;
+    display: grid !important;
 }
 
 .slide-left {
