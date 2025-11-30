@@ -156,8 +156,8 @@ main {
 }
 
 .slide-right img {
-    width: 95%;
-    height: auto;
+    width: 60%;
+    max-height: 180px;
     border-radius: 8px;
     object-fit: contain;
 }
