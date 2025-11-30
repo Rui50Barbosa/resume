@@ -147,6 +147,22 @@ main {
 .slide-left {
     width: 50%;
     text-align: left;
+    max-height: 300px;
+    overflow-y: auto;
+    padding-right: 10px;
+}
+
+.slide-left::-webkit-scrollbar {
+    width: 8px;
+}
+
+.slide-left::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
+
+.slide-left::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
 
 .slide-right {
