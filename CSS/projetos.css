@@ -152,6 +152,7 @@ main {
 .slide-right {
     width: 50%;
     align-items: center;
+    gap: 20px;
 }
 
 .slide-right img {
