@@ -225,9 +225,11 @@ main {
 }
 
 .dots-container {
-    margin-top: 20px;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    justify-content: center;
     gap: 10px;
 }
 
