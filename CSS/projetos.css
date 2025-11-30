@@ -147,7 +147,7 @@ main {
 .slide-left {
     width: 50%;
     text-align: left;
-    max-height: 300px;
+    max-height: 360px;
     overflow-y: auto;
     padding-right: 10px;
 }
