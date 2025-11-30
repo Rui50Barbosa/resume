@@ -130,7 +130,7 @@ main {
 }
 
 .slide.active {
-    display: flex;
+    align-items: flex-start;
 }
 
 .slide-left {
@@ -145,7 +145,8 @@ main {
 .slide-right {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .slide-left::-webkit-scrollbar {
