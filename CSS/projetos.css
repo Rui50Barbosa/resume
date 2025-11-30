@@ -224,26 +224,24 @@ main {
     gap: 10px;
 }
 
-.dots {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
+.dots-container {
+    margin-top: 20px;
     display: flex;
+    justify-content: center;
     gap: 10px;
 }
 
-.dots span {
-    width: 10px;
-    height: 10px;
+.dot {
+    width: 12px;
+    height: 12px;
+    background: #bbb;
     border-radius: 50%;
-    background: #ccc;
     cursor: pointer;
-    transition: background 0.3s;
+    transition: 0.3s;
 }
 
-.dots span.active {
-    background: #1e73be;
+.dot.active {
+    background: #003c9e;
 }
 
 .footer {
