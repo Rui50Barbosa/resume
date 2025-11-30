@@ -115,7 +115,7 @@ main {
     padding: 20px;
     overflow: hidden;
     position: relative;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
 }
